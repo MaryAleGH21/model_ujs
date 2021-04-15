@@ -1,0 +1,5 @@
+var elem = document.querySelector(`#product-<%= @product.id %>`)
+elem.innerHTML = "<%= j render partial: 'products/product-detail', locals: { product: @product } %>"
+               // La "j" abrevia el scape-javacript
+var div = document.querySelector('#product-content')
+div.innerHTML = ''
